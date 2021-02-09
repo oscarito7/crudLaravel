@@ -18,9 +18,9 @@
 
             <div class="w-full p-6">
                 <p class="text-gray-700">
-                    You are logged in!
-                    Please Click up for Enter Products,
-                    
+                    Tu estas logeado </br>
+                    Porfavor haz click arriba en la parte de PRODUCTOS para ver todos los productos.</br>
+                    GRACIAS                   
                 </p>
             </div>
         </section>
