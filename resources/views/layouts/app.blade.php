@@ -24,6 +24,17 @@
                         {{ config('app.name', 'Laravel') }}
                     </a>
                 </div>
+                {{--ADD this navigation Option--}}
+                @auth
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow ml-3">
+                    <a href="{{route("projects.index")}}" class="text-2xl text-white block mt-4 lg:inline-block lg:mt-0 text-teat-200 hover:text-purple-600 mr-4">
+                    {{__("Productos")}} 
+                    </a>   
+                </div>    
+            </div>   
+                @endauth
+                {{--End Navigation Option--}}
                 <nav class="space-x-4 text-gray-300 text-sm sm:text-base">
                     @guest
                         <a class="no-underline hover:underline" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -45,7 +56,23 @@
             </div>
         </header>
 
-        @yield('content')
+        @if(session("success"))
+        <div class="container mx-auto mt-5">
+            <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3">
+                <div class="flex">
+                    <div class="py-1">
+                        <p class="font-bold">
+                            {{__("Nuevo Mensaje")}}
+                        </p>
+                        <p class="text-sm">{{session("success")}} </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @endif
+        <div class="container mx-auto px-4">
+            @yield('content')
+        </div>       
     </div>
 </body>
 </html>
