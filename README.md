@@ -6,3 +6,4 @@ dentro de la carpeta Database/schema/dump   Se encuentra el Dump de la base de d
 decidi dejar las migraciones de las tablas para ver el trabajo que realice,  los seeders, y las facctories de laravel 8,
 Los datos ficticios que tiene actualmente de los productos los cree con Faker de laravel, 
 en la vista principal de los productos se muestra un buscador el cual permite Buscar por SKU de los productos, 
+<p><img sr="http://box2235.temp.domains/~mottionl/imagnes/wp-content/uploads/2021/02/crud.png" width="450"> </p>
